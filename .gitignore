@@ -1,0 +1,6 @@
+#sublime setup
+.DS_Store
+#npm packages
+/node_module/
+#after packing
+/dist/
