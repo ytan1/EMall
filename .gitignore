@@ -1,6 +1,6 @@
 #sublime setup
 .DS_Store
 #npm packages
-/node_module/
+/node_modules/
 #after packing
 /dist/
