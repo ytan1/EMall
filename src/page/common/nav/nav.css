@@ -1,0 +1,28 @@
+/*
+* @Author: ytan1
+* @Date:   2018-03-07 17:17:02
+* @Last Modified by:   ytan1
+* @Last Modified time: 2018-03-08 10:30:40
+*/
+.nav{
+    background: #eee;
+    height: 30px;
+    line-height: 30px;
+}
+.user-head{
+    float: left;
+
+}
+.user-head .is-login{
+    display: none;
+}
+.user-head .link{
+    margin-right: 5px;
+}
+.nav-list{
+    float: right;
+}
+.nav-item{
+    float: left;
+    margin-left: 5px;
+}

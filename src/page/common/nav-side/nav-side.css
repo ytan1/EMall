@@ -1,0 +1,22 @@
+/*
+* @Author: ytan1
+* @Date:   2018-03-08 15:13:57
+* @Last Modified by:   ytan1
+* @Last Modified time: 2018-03-08 18:40:38
+*/
+.nav-side{
+    margin-left: 20px;
+    float: left;
+    width: 130px;
+    min-height: 100px;
+}
+.nav-side-item{
+    font-size: 13px;
+    line-height: 25px;
+}
+.nav-side-item .link{
+    color: #666;
+}
+.nav-side-item.active .link{
+    color: #c60023;
+}

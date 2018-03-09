@@ -1,8 +1,11 @@
 <!DOCTYPE html>
 <html>
-    <%= require('html-loader!./layout/html-head.html') %>
+<head>
+        <%= require('html-loader!./layout/html-head.html') %>
+        <title><%= htmlWebpackPlugin.options.title %> -- E-Mall 2018</title>
+</head>
 
 <body>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<%= require('html-loader!./layout/footer.html') %>
 </body>
 </html>

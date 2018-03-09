@@ -1,0 +1,16 @@
+footer{
+    padding-bottom: 30px;
+}
+.footer-nav{
+
+    text-align: center;
+
+    color: #666;
+}
+.footer-nav a{
+    padding: 0 10px;
+}
+.footer-copyright{
+    text-align: center;
+    color: #666;
+}

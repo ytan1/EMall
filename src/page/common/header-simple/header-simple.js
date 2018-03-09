@@ -1,0 +1,1 @@
+import './header-simple.css'

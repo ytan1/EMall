@@ -1,0 +1,28 @@
+/*
+* @Author: ytan1
+* @Date:   2018-03-08 17:57:39
+* @Last Modified by:   ytan1
+* @Last Modified time: 2018-03-08 18:39:15
+*/
+.content{
+    text-align: center;
+}
+.result-wrap{
+    display: none;
+}
+.result{
+    margin-bottom: 20px;
+}
+.goHome-btn{
+
+    display: inline-block;
+    text-decoration: none;
+    height: 20px;
+    line-height: 20px;
+    width: 40px;
+    text-align: center;
+    border-radius: 5px;
+    background: #fff;
+    border: 1px solid #999;
+    cursor: pointer;
+}

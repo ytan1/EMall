@@ -2,7 +2,7 @@
 * @Author: ytan1
 * @Date:   2018-03-05 14:38:53
 * @Last Modified by:   ytan1
-* @Last Modified time: 2018-03-06 16:01:19
+* @Last Modified time: 2018-03-08 17:56:05
 */
 const path = require('path')
 const webpack = require('webpack')
@@ -24,7 +24,9 @@ const config = {
     entry: {
         'index' : ['./src/page/index/index.js'],
         'login' : ['./src/page/login/index.js'],
-        'common': ['./src/page/common/index.js']
+        'common': ['./src/page/common/index.js'],
+        'result': ['./src/page/result/index.js']
+
     },
     output: {
         path: path.join(__dirname, 'dist'),
@@ -47,6 +49,16 @@ const config = {
             }
         }
     },
+    resolve: {
+        alias: {
+            node_modules: path.join(__dirname, '/node_modules'),
+            util: path.join(__dirname, '/src/util'),
+            view: path.join(__dirname, '/src/view'),
+            image: path.join(__dirname, '/src/image'),
+            service: path.join(__dirname, '/src/service'),
+            page: path.join(__dirname, '/src/page')
+        }
+    },
     module: {
         rules: [
             {
@@ -57,8 +69,29 @@ const config = {
                 })
             },
             {
-                test: /\.(gif|png|jpe?g|woff|svg|eot|ttf)(\?\S*)?$/,
-                use: 'url-loader?limit=1000&name=resourse/[name].[ext]'
+                test: /\.string$/,
+                use: 'html-loader'
+            },
+            {
+                test: /\.(gif|png|jpe?g)(\?\S*)?$/,
+                use: 'url-loader?limit=100&name=resourse/[name].[ext]'
+            },
+            //those are for loaders for font awesome 
+            {
+                test: /\.woff(\?v=\d+\.\d+\.\d+)?$/,
+                use: "url-loader?limit=10000&mimetype=application/font-woff"
+            }, {
+                test: /\.woff2(\?v=\d+\.\d+\.\d+)?$/,
+                use: "url-loader?limit=10000&mimetype=application/font-woff"
+            }, {
+                test: /\.ttf(\?v=\d+\.\d+\.\d+)?$/,
+                use: "url-loader?limit=10000&mimetype=application/octet-stream"
+            }, {
+                test: /\.eot(\?v=\d+\.\d+\.\d+)?$/,
+                use: "file-loader"
+            }, {
+                test: /\.svg(\?v=\d+\.\d+\.\d+)?$/,
+                use: "url-loader?limit=10000&mimetype=image/svg+xml"
             }
         ]
     },
@@ -70,14 +103,22 @@ const config = {
         // }),
 
         //individual css loaded 
-        new ExtractTextPlugin('css/[name].css'),
+        new ExtractTextPlugin('[name].css'),
         //for html template
         new HtmlWebpackPlugin( getHtmlConfig('index') ),
-        new HtmlWebpackPlugin( getHtmlConfig('login') )
+        new HtmlWebpackPlugin( getHtmlConfig('login') ),
+        new HtmlWebpackPlugin( getHtmlConfig('result') )
     ],
     devtool: 'cheap-module-eval-source-map',
     devServer: {
-        contentBase: path.join(__dirname, 'dist')
+        contentBase: path.join(__dirname, 'dist'),
+        proxy: {
+            '/api': {
+                target: 'http://test.happymmall.com',
+                changeOrigin: true,
+                pathRewrite: {'^/api': ''}
+            }
+        }
     }
 
 }

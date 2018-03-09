@@ -1,0 +1,18 @@
+/*
+* @Author: ytan1
+* @Date:   2018-03-08 18:00:07
+* @Last Modified by:   ytan1
+* @Last Modified time: 2018-03-08 18:26:08
+*/
+.header-simple{
+    height: 50px;
+
+}
+.logo{
+    color: #c60023;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 0px 0px;
+    position: absolute;
+    top: 0px;
+}
