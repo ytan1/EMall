@@ -18,7 +18,6 @@ var header = {
             _this.searchSubmit()
         })
         $$('#header-input').keyup(function(e){
-            console.log(e.keycode)
             if(e.keyCode === 13){
                 _this.searchSubmit()
             }

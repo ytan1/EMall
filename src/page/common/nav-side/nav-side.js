@@ -2,7 +2,7 @@
 * @Author: ytan1
 * @Date:   2018-03-08 15:13:41
 * @Last Modified by:   ytan1
-* @Last Modified time: 2018-03-08 17:10:47
+* @Last Modified time: 2018-03-10 21:18:32
 */
 var $$ = require('jquery')
 require('./nav-side.css')
@@ -12,10 +12,10 @@ var navSide = {
     options: {
         name: '',
         navList: [
-            { name: 'my', description: 'My Info', href: './user-center.html' },
+            { name: 'info', description: 'My Info', href: './user-center.html' },
             { name: 'orders', description: 'My Orders', href: './order-list.html' },
             { name: 'about', description: 'About', href: './about.html' },
-            { name: 'pwd', description: 'Find Password', href: './pass-update.html' },
+            { name: 'pwd', description: 'Update Password', href: './user-update-password.html' },
         ]
     },
     init: function(option){
@@ -28,7 +28,6 @@ var navSide = {
                 options.navList[i].isActive = true
             }
         }
-        console.log(options)
 
         var html = _mm.renderHTML(temp, {navList:options.navList})
         $$('.nav-side').html(html)

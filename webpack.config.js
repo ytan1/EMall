@@ -2,7 +2,7 @@
 * @Author: ytan1
 * @Date:   2018-03-05 14:38:53
 * @Last Modified by:   ytan1
-* @Last Modified time: 2018-03-08 17:56:05
+* @Last Modified time: 2018-03-10 20:46:13
 */
 const path = require('path')
 const webpack = require('webpack')
@@ -23,7 +23,12 @@ const getHtmlConfig = (name) => ({
 const config = {
     entry: {
         'index' : ['./src/page/index/index.js'],
-        'login' : ['./src/page/login/index.js'],
+        'user-login' : ['./src/page/user-login/index.js'],
+        'user-register' : ['./src/page/user-register/index.js'],
+        'user-center' : ['./src/page/user-center/index.js'],
+        'user-center-update' : ['./src/page/user-center-update/index.js'],
+        'user-reset-password' : ['./src/page/user-reset-password/index.js'],
+        'user-update-password' : ['./src/page/user-update-password/index.js'],
         'common': ['./src/page/common/index.js'],
         'result': ['./src/page/result/index.js']
 
@@ -106,7 +111,12 @@ const config = {
         new ExtractTextPlugin('[name].css'),
         //for html template
         new HtmlWebpackPlugin( getHtmlConfig('index') ),
-        new HtmlWebpackPlugin( getHtmlConfig('login') ),
+        new HtmlWebpackPlugin( getHtmlConfig('user-login') ),
+        new HtmlWebpackPlugin( getHtmlConfig('user-register') ),
+        new HtmlWebpackPlugin( getHtmlConfig('user-center') ),
+        new HtmlWebpackPlugin( getHtmlConfig('user-center-update') ),
+        new HtmlWebpackPlugin( getHtmlConfig('user-update-password') ),
+        new HtmlWebpackPlugin( getHtmlConfig('user-reset-password') ),
         new HtmlWebpackPlugin( getHtmlConfig('result') )
     ],
     devtool: 'cheap-module-eval-source-map',

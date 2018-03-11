@@ -2,7 +2,7 @@
 * @Author: ytan1
 * @Date:   2018-03-07 13:49:59
 * @Last Modified by:   ytan1
-* @Last Modified time: 2018-03-08 18:40:08
+* @Last Modified time: 2018-03-10 19:05:06
 */
 /*css normailize*/
 *{
@@ -30,16 +30,35 @@ header{
     background: #fff;
 }
 /*fot content under the header*/
-.page-wrap{
-    padding: 20px 0;
-    background: #fff;
-}
+
 /*fix width*/
 .w{
     width: 1080px;
-    margin: 0px auto 20px;
+    margin: 0px auto;
     position: relative;
     overflow: hidden;
+}
+/*for login module*/
+.middleW{
+    background-color: #fff;
+    padding: 20px;
+    width: 360px;
+    margin: 20px auto 0px;
+    position: relative;
+    overflow: hidden;
+}
+.crumb{
+    background: #eee;
+    height:50px;
+    line-height: 50px;
+    font-size: 14px;
+    margin-bottom: 15px;
+    border-top: 2px solid #c60023;
+}
+.with-nav{
+    min-height: 400px;
+    margin-left: 170px;
+    background: #fff;
 }
 /*global style*/
 .hide{

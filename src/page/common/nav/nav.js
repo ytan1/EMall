@@ -2,7 +2,7 @@
 * @Author: ytan1
 * @Date:   2018-03-07 17:17:18
 * @Last Modified by:   ytan1
-* @Last Modified time: 2018-03-08 14:05:21
+* @Last Modified time: 2018-03-09 14:50:00
 */
 var $$ = require('jquery')
 require('./nav.css')
@@ -21,7 +21,7 @@ var nav = {
             _mm.doLogin()
         })
         $$('.js-register').click(function(){
-            window.location.href = './register.html'
+            window.location.href = './user-register.html'
         })
         $$('.js-logout').click(function(){
             _user.logout(function(res){

@@ -8,10 +8,22 @@
 <body>
     <%= require('html-loader!./layout/nav.html') %>
     <%= require('html-loader!./layout/header.html') %>
+    <!-- for crumb -->
+    <div class="crumb">
+        <div class="w">
+            <a class="link" href="./index.html">EMall</a>
+            <span> > </span>
+            <span class="link-text">My info</span>
+        </div>
+    </div>
     <div class="w">
         <%= require('html-loader!./layout/nav-side.html') %>
         <div class="content with-nav">
-
+            <div class="user-center-list">
+                <div class="loader"></div>
+            </div>
+            
+            
         </div>
     </div>
     <%= require('html-loader!./layout/footer.html') %>
