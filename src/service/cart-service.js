@@ -2,7 +2,7 @@
 * @Author: ytan1
 * @Date:   2018-03-07 20:14:03
 * @Last Modified by:   ytan1
-* @Last Modified time: 2018-03-08 10:48:52
+* @Last Modified time: 2018-03-14 16:50:07
 */
 var _mm = require('util/mm.js')
 
@@ -15,6 +15,15 @@ var _cart = {
             error: reject
         })
     },
+    addToCart: function(data, resolve, reject){
+        _mm.request({
+            url: _mm.getServerUrl('/cart/add.do'),
+            // method: 'POST',
+            data: data,
+            success: resolve,
+            error: reject
+        })
+    }
 
 }
 module.exports = _cart

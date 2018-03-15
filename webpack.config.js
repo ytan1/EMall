@@ -2,7 +2,7 @@
 * @Author: ytan1
 * @Date:   2018-03-05 14:38:53
 * @Last Modified by:   ytan1
-* @Last Modified time: 2018-03-10 20:46:13
+* @Last Modified time: 2018-03-14 13:46:03
 */
 const path = require('path')
 const webpack = require('webpack')
@@ -23,6 +23,8 @@ const getHtmlConfig = (name) => ({
 const config = {
     entry: {
         'index' : ['./src/page/index/index.js'],
+        'list' : ['./src/page/list/index.js'],
+        'detail' : ['./src/page/detail/index.js'],
         'user-login' : ['./src/page/user-login/index.js'],
         'user-register' : ['./src/page/user-register/index.js'],
         'user-center' : ['./src/page/user-center/index.js'],
@@ -35,7 +37,7 @@ const config = {
     },
     output: {
         path: path.join(__dirname, 'dist'),
-        // publicPath: '/dist/',
+        publicPath: '/',
         filename: 'js/[name].js'
     },
     externals: {
@@ -108,9 +110,11 @@ const config = {
         // }),
 
         //individual css loaded 
-        new ExtractTextPlugin('[name].css'),
+        new ExtractTextPlugin('css/[name].css'),
         //for html template
         new HtmlWebpackPlugin( getHtmlConfig('index') ),
+        new HtmlWebpackPlugin( getHtmlConfig('list') ),
+        new HtmlWebpackPlugin( getHtmlConfig('detail') ),
         new HtmlWebpackPlugin( getHtmlConfig('user-login') ),
         new HtmlWebpackPlugin( getHtmlConfig('user-register') ),
         new HtmlWebpackPlugin( getHtmlConfig('user-center') ),

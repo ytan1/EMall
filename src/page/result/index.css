@@ -2,12 +2,13 @@
 * @Author: ytan1
 * @Date:   2018-03-08 17:57:39
 * @Last Modified by:   ytan1
-* @Last Modified time: 2018-03-09 11:06:06
+* @Last Modified time: 2018-03-11 14:40:05
 */
 .content{
     text-align: center;
 }
 .result-wrap{
+    margin-top: 30px;
     display: none;
 }
 .result{

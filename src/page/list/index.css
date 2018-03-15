@@ -1,0 +1,91 @@
+/*
+* @Author: ytan1
+* @Date:   2018-03-13 13:36:16
+* @Last Modified by:   ytan1
+* @Last Modified time: 2018-03-14 10:03:25
+*/
+.sort-con{
+    overflow: auto;
+}
+.sort-item{
+    float: left;
+    width: 80px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    font-size: 12px;
+    background: #fff;
+    color: #000;
+    border: 1px #999 solid;
+    margin-right: -1px;
+    position: relative;
+    cursor: pointer;
+}
+.sort-item.active{
+    color: #fff;
+    background: #c60023;
+}
+.sort-item .fa-sort-asc{
+    position: absolute;
+    top: 3px;
+    left: 65px;
+    opacity: .3;
+}
+.sort-item .fa-sort-desc{
+    position: absolute;
+    top: 5px;
+    left: 65px;
+    opacity: .3;
+}
+.sort-item.asc .fa-sort-asc{
+    opacity: 1;
+}
+.sort-item.desc .fa-sort-desc{
+    opacity: 1;
+}
+.product-list{
+    margin-right: -20px;
+    display: block;
+    min-height: 520px;
+}
+.product-list .list-item{
+    width: 180px;
+    height: 240px;
+    position: relative;
+    padding: 10px;
+    background: #fff;
+    float: left;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+.product-list .list-item .list-img{
+    width: 180px;
+    height: 180px;
+}
+.product-list .list-item .list-img .img-con{
+    width: 180px;
+    height: 180px;
+}
+.product-list .list-item .list-price{
+    width: 180px;
+    height: 20px;
+    color: #c60023;
+    font-size: 15px;
+    line-height: 20px;
+}
+.product-list .list-item .list-name{
+    width: 180px;
+    color: #000;
+    font-size: 12px;
+}
+.list-item .link{
+    color: #000;
+}
+.list-item .link:hover{
+    color: red;
+}
+.pagination{
+    margin-top: 30px;
+    text-align: center;
+
+}
