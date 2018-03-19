@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <%= require('html-loader!./layout/html-head.html') %>
+        <title><%= htmlWebpackPlugin.options.title %> -- E-Mall 2018</title>
+</head>
+
+<body>
+    <%= require('html-loader!./layout/nav.html') %>
+    <%= require('html-loader!./layout/header.html') %>
+    <!-- for crumb -->
+    <div class="crumb">
+        <div class="w">
+            <a class="link" href="./index.html">EMall</a>
+            <span> > </span>
+            <span class="link-text">List of items</span>
+        </div>
+    </div>
+    <div class="cart-page w">
+        <div class="loader"></div>
+    </div>
+    <%= require('html-loader!./layout/footer.html') %>
+</body>
+
+</html>

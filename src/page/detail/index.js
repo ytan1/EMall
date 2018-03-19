@@ -2,14 +2,9 @@
 * @Author: ytan1
 * @Date:   2018-03-14 13:46:56
 * @Last Modified by:   ytan1
-* @Last Modified time: 2018-03-14 16:52:45
+* @Last Modified time: 2018-03-15 12:37:49
 */
-/*
-* @Author: ytan1
-* @Date:   2018-03-10 11:47:58
-* @Last Modified by:   ytan1
-* @Last Modified time: 2018-03-10 19:00:02
-*/
+
 require('./index.css')
 var _mm = require('util/mm')
 require('page/common/header/header.js')
@@ -41,24 +36,30 @@ var page = {
     },
     bindEvent: function(){
         var _this = this
+        //check if stock is 0
+        
+        //photo thumbnail
         $$(document).on('mouseenter', '.image-thumbnail', function(){
             var thisEle = $$(this)
             $$('.main-img').attr('src', thisEle.attr('src'))
         })
+        //for up and down button 
         $$(document).on('click', '.amount-up', function(){
-            var inputEle = $$('.intro-amount .item-value input'),
-                amount = parseInt(inputEle.val()),
-                max = $$('.intro-stock .item-value').text()
-                console.log(max)
-            inputEle.val( (amount + 1 > max) ? max : amount + 1)
+            var amount = parseInt($$('.intro-amount .item-value input').val()),
+                max = parseInt($$('.intro-stock .item-value').text())
+            $$('.intro-amount .item-value input').val( (amount + 1 > max) ? max : amount + 1)
         })
         $$(document).on('click', '.amount-down', function(){
-            var inputEle = $$('.intro-amount .item-value input'),
-                amount = inputEle.val()
-            inputEle.val( (amount - 1 > 0) ? amount - 1 : 1)
+            var amount = parseInt($$('.intro-amount .item-value input').val()),
+                max = parseInt($$('.intro-stock .item-value').text())
+                if(max === 0){
+                    return
+                }
+            $$('.intro-amount .item-value input').val( (amount - 1 > 0) ? amount - 1 : 1)
         })
+        //add to cart button
         $$(document).on('click', '.add-to-cart', function(){
-            var amount = 
+           
             _cart.addToCart({
                 productId: _this.data.productId,
                 count: parseInt($$('.intro-amount .item-value input').val())
