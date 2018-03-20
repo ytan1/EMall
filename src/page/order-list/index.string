@@ -1,0 +1,40 @@
+<div class="order-list-title">All of Confirmed Orders</div>
+<div class="order-list-content">
+    <table class="table-head">
+        <tr class="order-head-row">
+            <th class="order-img">&nbsp;</th>
+            <th class="order-item">Items</th>
+            <th class="order-price">Price</th>
+            <th class="order-amount">Amount</th>
+            <th class="order-total-price">Total</th>
+        </tr>
+    </table>
+    {{#list}}
+    <table class="table-body">
+        <tr class="order-summary-row">
+            <td colspan="5">
+                <span>OrderNo.: <span class="link bold"><a class="link" href="./order-detail.html?orderNo={{orderNo}}" target="_blank">{{orderNo}}</a></span></span>
+                <span>{{createTime}}</span>
+                <span>Receiver: {{receiverName}}</span>
+                <span>Status: {{statusDesc}}</span>
+                <span>Total: <span class="red bold">${{payment}}</span></span>
+                <span class="link bold details"><a class="link" href="./order-detail.html?orderNo={{orderNo}}" target="_blank">Details...</a></span>
+            </td>
+        </tr>
+        {{#orderItemVoList}}
+        <tr class="order-item-row" >
+            <td class="order-img">
+                <a href="./detail.html?productId={{productId}}" target="_blank">
+                    <img class="order-img-ele" src="{{imageHost}}{{productImage}}" alt="{{productName}}">
+                </a>
+            </td>
+            <td class="order-item"><a class="link" href="./detail.html?productId={{productId}}" target="_blank">{{productName}}</a></td>
+            <td class="order-price">${{currentUnitPrice}}</td>
+            <td class="order-amount">{{quantity}}</td>
+            <td class="order-total-price">${{totalPrice}}</td>
+        </tr>
+        {{/orderItemVoList}}
+    </table>
+    {{/list}}
+    
+</div>

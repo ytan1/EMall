@@ -1,0 +1,39 @@
+<div class="modal-background close">
+    <div class="modal-container">
+        <div class="modal-header">
+            {{#isUpdate}}
+            <h5 class="modal-title">Edit address</h5>
+            {{/isUpdate}}
+            {{^isUpdate}}
+            <h5 class="modal-title">New address</h5>
+            {{/isUpdate}}
+            <i class="fa fa-close close"></i>
+        </div>
+        
+        <div class="modal-body">
+            <div class="body-line">
+                <label class="name"><span class="required">*</span>Receiver: </label><input id="modal-name" type="text" placeholder="Your name?" value="{{data.receiverName}}" />
+            </div>
+            <div class="body-line">
+                <label class="location"><span class="required">*</span>Location: 
+                    <select id="modal-province">
+                        
+                    </select>
+                    <select id="modal-city">
+                        
+                    </select>
+                </label>
+            </div>
+            <div class="body-line">
+                <label class="address"><span class="required">*</span>Address: <input id="modal-address" type="text" placeholder="Your shipping address?" value="{{data.receiverAddress}}"/></label>
+            </div>
+            <div class="body-line">
+                <label class="phone"><span class="required">*</span>Contact: <input id="modal-phone" type="text" placeholder="Your contact?" value="{{data.receiverPhone}}"/></label>
+            </div>
+        </div>
+
+        <div class="modal-footer">
+            <div class="btn">Save</div>
+        </div>
+    </div>
+</div>

@@ -2,11 +2,11 @@
 * @Author: ytan1
 * @Date:   2018-03-15 11:34:03
 * @Last Modified by:   ytan1
-* @Last Modified time: 2018-03-15 17:21:05
+* @Last Modified time: 2018-03-18 22:43:09
 */
 .cart-table{
     width: 100%;
-    border: 1px #ebebeb solid;
+    border-bottom: 1px #ebebeb solid;
     margin-bottom: 5px;
     border-collapse: collapse;
 }
@@ -16,7 +16,7 @@
     vertical-align: middle;
     line-height: 40px;
 }
-.
+
 .cart-content-row{
     height: 80px;
 }
