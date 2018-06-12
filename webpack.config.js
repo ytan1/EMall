@@ -41,7 +41,7 @@ const config = {
     },
     output: {
         path: path.join(__dirname, 'dist'),
-        publicPath: '/',   //for dev server
+        publicPath: 'http://source.ytan1mall.com/',   //base path for all css js file showed in dist html
         filename: 'js/[name].js'
     },
     externals: {
