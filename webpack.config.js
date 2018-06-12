@@ -41,7 +41,7 @@ const config = {
     },
     output: {
         path: path.join(__dirname, 'dist'),
-        publicPath: '/',
+        publicPath: '/',   //for dev server
         filename: 'js/[name].js'
     },
     externals: {
@@ -52,9 +52,9 @@ const config = {
         splitChunks: {
             cacheGroups: {
                 commons: {
-                    name: 'common',
+                    name: 'common',   //same name as the js entry we want to set as a common module imported by every html
                     chunks: 'all',
-                    minChunks: 2,
+                    minChunks: 2,     
                     enforce: true
                 }
             }
@@ -134,6 +134,9 @@ const config = {
     devtool: 'cheap-module-eval-source-map',
     devServer: {
         contentBase: path.join(__dirname, 'dist'),
+        inline: true,
+        port: 8000,
+
         proxy: {
             '/api': {
                 target: 'http://test.happymmall.com',

@@ -9,9 +9,9 @@ import './index.css'
 var _mm = require('util/mm.js')
 import 'page/common/header/header.js'
 import 'page/common/nav/nav.js'
-import 'slick/slick.min.js'
-import 'slick/slick.css'
-import 'slick/slick-theme.css'
+import 'slick-carousel/slick/slick.min.js'
+import 'slick-carousel/slick/slick.css'
+import 'slick-carousel/slick/slick-theme.css'
 var navSide = require('page/common/nav-side/nav-side.js') 
 // var bannerTemp = require('./banner.string')
 var $$ = require('jquery')
