@@ -12,13 +12,13 @@ var _mm = {
             dataType: param.type || 'json',
             data    : param.data || '', 
             success : function(res){
-                if( res.status === 0 ){
+                if( res.code === 0 ){
                     typeof param.success === 'function' && param.success(res)
                 }
-                else if ( res.status === 10 ){
+                else if ( res.code === 10 ){
                     _this.doLogin()
                 }
-                else if ( res.status === 1 ){
+                else if ( res.code === 1 ){
                     typeof param.error === 'function' && param.error(res.msg)
                 }
             },
