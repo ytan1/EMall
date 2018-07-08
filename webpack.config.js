@@ -131,7 +131,8 @@ const config = {
         new HtmlWebpackPlugin( getHtmlConfig('user-reset-password') ),
         new HtmlWebpackPlugin( getHtmlConfig('result') )
     ],
-    devtool: 'cheap-module-eval-source-map',
+    devtool: 'cheap-module-source-map', 
+    //-eval- best for find bug in source code on browser when developing,  use 'cheap-module-source-map' for production
     devServer: {
         contentBase: path.join(__dirname, 'dist'),
         inline: true,

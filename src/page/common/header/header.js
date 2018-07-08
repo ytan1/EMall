@@ -11,6 +11,7 @@ var header = {
     },
     onLoad: function(){
         var keyword = _mm.getUrlParam('keyword')
+        //_mm.getUrlParam = (v) => { return window.location.href.search.match(RegExp('?|&' + v + '=(\w*)($|&)'))[1]; }
         $$('#header-input').val(keyword)
     },
     bindEvent: function(){

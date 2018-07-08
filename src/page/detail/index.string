@@ -14,7 +14,7 @@
             </div>
             <div class="intro-right">
                 <div class="intro-title">{{name}}</div>
-                <div class="intro-subtitle">{{subtitle}}</div>
+                <div class="intro-subtitle">{{subTitle}}</div>
                 <div class="intro-item intro-price">
                     <span class="item-key">Price:</span><span class="item-value">${{price}}</span>
                 </div>
