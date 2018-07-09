@@ -21,8 +21,8 @@
 <span class="pg-size-con">
     Show <select class="pg-size">
             <option selected hidden value={{pageSize}}>{{pageSize}}</option>
-            <option value=2>2</option>
             <option value=5>5</option>
+            <option value=10>10</option>
             <option value=20>20</option>
    
         </select> items per page
