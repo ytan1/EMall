@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <%= require('html-loader!./layout/html-head.html') %>
+        <title><%= htmlWebpackPlugin.options.title %> -- E-Mall 2018</title>
+</head>
+
+<body>
+    <%= require('html-loader!./layout/nav.html') %>
+    <%= require('html-loader!./layout/header.html') %>
+    <!-- for crumb -->
+    <div class="crumb">
+        <div class="w">
+            <a class="link" href="./index.html">EMall</a>
+            <span> > </span>
+            <span class="link-text">About</span>
+        </div>
+    </div>
+    <div class="w">
+        <%= require('html-loader!./layout/nav-side.html') %>
+        <div class="content with-nav">
+            <div class="main-container">
+                <a href="./index.html"><div class="logo">E-Mall</div></a>
+                <br>
+                Author: ytan1
+                <br>
+                Contact: ytan1@ualberta.ca. More at my <a href="https://www.linkedin.com/in/yang-tan-11a817b9/">linkedin</a>. 
+                <br>
+                Notice: This website is only for learning purpose, is <strong>NOT</strong> a real e-commerce site. 
+                <br>
+                Take a look at my awesome <a href="http://ec2-35-182-227-33.ca-central-1.compute.amazonaws.com:3000/">homepage</a>!
+                <br>
+                Thank you for coming, have a wonderful day.
+            </div>
+            
+            
+            
+        </div>
+    </div>
+    <%= require('html-loader!./layout/footer.html') %>
+</body>
+
+</html>

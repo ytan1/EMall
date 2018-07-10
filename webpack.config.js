@@ -129,7 +129,8 @@ const config = {
         new HtmlWebpackPlugin( getHtmlConfig('user-center-update') ),
         new HtmlWebpackPlugin( getHtmlConfig('user-update-password') ),
         new HtmlWebpackPlugin( getHtmlConfig('user-reset-password') ),
-        new HtmlWebpackPlugin( getHtmlConfig('result') )
+        new HtmlWebpackPlugin( getHtmlConfig('result') ),
+        new HtmlWebpackPlugin( getHtmlConfig('about') )
     ],
     devtool: 'cheap-module-source-map', 
     //-eval- best for find bug in source code on browser when developing,  use 'cheap-module-source-map' for production
@@ -140,9 +141,8 @@ const config = {
 
         proxy: {
             '/api': {
-                target: 'http://test.happymmall.com',
-                changeOrigin: true,
-                pathRewrite: {'^/api': ''}
+                target: 'http://www.ytan1mall.com',
+                changeOrigin: true
             }
         }
     }

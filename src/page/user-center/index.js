@@ -29,7 +29,7 @@ var page = {
             var html = _mm.renderHTML(template, res.data)
             $$('.user-center-list').html(html)
         }, function(errMsg){
-            _mm.errorTips(errMsg)
+            _mm.errTip(errMsg)
         })        
     }
 }

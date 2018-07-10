@@ -32,7 +32,6 @@ var page = {
                 passwordNew: $$('#newPassword').val(),
                 passwordConfirm: $$('#confirm').val()
             }
-            console.log(formData)
             var validateRes = _this.validateForm(formData)
             if(validateRes.status){
                 _user.updatePassword({
