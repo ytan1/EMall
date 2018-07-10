@@ -36,7 +36,8 @@ const config = {
         'user-reset-password' : ['./src/page/user-reset-password/index.js'],
         'user-update-password' : ['./src/page/user-update-password/index.js'],
         'common': ['./src/page/common/index.js'],
-        'result': ['./src/page/result/index.js']
+        'result': ['./src/page/result/index.js'],
+        'about': ['./src/page/about/index.js']
 
     },
     output: {

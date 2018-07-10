@@ -13,7 +13,7 @@ var navSide = {
         name: '',
         navList: [
             { name: 'info', description: 'My Info', href: './user-center.html' },
-            { name: 'orders', description: 'My Orders', href: './order-list.html' },
+            { name: 'orders', description: 'Confirmed Orders', href: './order-list.html' },
             { name: 'about', description: 'About', href: './about.html' },
             { name: 'pwd', description: 'Update Password', href: './user-update-password.html' },
         ]
