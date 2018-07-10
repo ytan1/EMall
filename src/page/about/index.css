@@ -3,7 +3,12 @@
     font-size: 30px;
     font-weight: bold;
     padding: 40px;
+    display: inline-block;
 }
 .about-content{
     padding: 0 0 40px 40px;
+}
+.about-logo a {
+    text-decoration: none;
+    color: #e80012;
 }
