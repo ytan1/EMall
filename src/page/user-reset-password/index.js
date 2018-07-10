@@ -106,9 +106,9 @@ var reset = {
             var _this = this
             _user.resetPassword({
                 username: this.data.username,
-                question: this.data.question,
-                answer: this.data.answer,
+                passwordNew: this.data.password,
                 forgetToken: this.data.token
+
             }, function(res){
                 window.location.href = './result.html?type=reset'
             }, function(errMsg){
@@ -116,14 +116,13 @@ var reset = {
             })
         }
         else {
-            showError.show('Please input answer!')
+            showError.show('Please input a new password!')
         }
     },
     showStep1: function(){
         $$('.reset-step1').show()
     },
     showStep2: function(question){
-        console.log(question)
         $$('.reset-step1').hide()
         $$('.reset-step2 .reset-notice').text(question)
         $$('.reset-step2').show()
