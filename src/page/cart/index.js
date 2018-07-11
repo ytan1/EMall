@@ -83,6 +83,8 @@ var page = {
                     }, function(errMsg){
                         _this.showCartError('Something wrong from server, try refreshing...')
                     })
+                }else{
+                    _this.showCartError('No item chosen yet...')
                 }
             }
         })

@@ -33,7 +33,16 @@ var _page ={
     bindEvent: function(){
         var orderNo = _mm.getUrlParam('orderNo')
         $$(document).on('click', '.pay', function(){
-            window.location.href = './payment.html?orderNo=' + orderNo
+            //click receive button, res is orderVo
+            _order.receivedAndPaid(orderNo, function(res){
+                _this.filterData(res.data)
+                //render status
+                $$('.status-container').html(_mm.renderHTML(templateStatus, res.data))
+                //render items
+                $$('.main-container').html(_mm.renderHTML(templateMain, res.data))
+            },function(errMsg){
+                _mm.errTip(errMsg)
+            })
         })
         $$(document).on('click', '.cancel', function(){
             _order.cancel(orderNo, function(res){
@@ -44,7 +53,8 @@ var _page ={
         })
     },
     filterData: function(data){
-        data.buttonAbled = (data.status == 10)
+        data.buttonAbled = (data.status == 10) //status 10 means unpaid
+        data.isPaid = (data.status == 20) //status 20 means paid
     }
 }
 

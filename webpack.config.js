@@ -37,7 +37,8 @@ const config = {
         'user-update-password' : ['./src/page/user-update-password/index.js'],
         'common': ['./src/page/common/index.js'],
         'result': ['./src/page/result/index.js'],
-        'about': ['./src/page/about/index.js']
+        'about': ['./src/page/about/index.js'],
+        'payment': ['./src/page/payment/index.js']
 
     },
     output: {
@@ -131,6 +132,7 @@ const config = {
         new HtmlWebpackPlugin( getHtmlConfig('user-update-password') ),
         new HtmlWebpackPlugin( getHtmlConfig('user-reset-password') ),
         new HtmlWebpackPlugin( getHtmlConfig('result') ),
+        new HtmlWebpackPlugin( getHtmlConfig('payment') ),
         new HtmlWebpackPlugin( getHtmlConfig('about') )
     ],
     devtool: 'cheap-module-source-map', 

@@ -7,16 +7,16 @@
 {{^isEmpty}}
 <table class="cart-table">
     <tr class="cart-head-row">
-        {{#allChecked}}
+        {{#cartAllChecked}}
             <th class="cart-select">
                 <label><input type="checkbox" class="cart-select-all" checked/><span>All</span></label>
             </th>
-        {{/allChecked}}
-        {{^allChecked}}
+        {{/cartAllChecked}}
+        {{^cartAllChecked}}
             <th class="cart-select">
                 <label><input type="checkbox" class="cart-select-all" /><span>All</span></label>
             </th>
-        {{/allChecked}}
+        {{/cartAllChecked}}
         <th class="cart-item">Items</th>
         <th class="cart-price">Price</th>
         <th class="cart-amount">Amount</th>
@@ -58,16 +58,16 @@
 {{/cartProductVoList}}
 <table class="cart-table">
     <tr class="cart-footer-row">
-        {{#allChecked}}
+        {{#cartAllChecked}}
             <th class="cart-select">
                 <label><input type="checkbox" class="cart-select-all" checked/><span>All</span></label>
             </th>
-        {{/allChecked}}
-        {{^allChecked}}
+        {{/cartAllChecked}}
+        {{^cartAllChecked}}
             <th class="cart-select">
                 <label><input type="checkbox" class="cart-select-all" /><span>All</span></label>
             </th>
-        {{/allChecked}}
+        {{/cartAllChecked}}
         <th class="cart-delete-all">
             <span class="link"><i class="fa fa-trash"></i>Delete chosen</span>
         </th>

@@ -122,6 +122,7 @@ var page = {
             orderListCon.html(_mm.renderHTML(orderTemp, res.data))
             
         }, function(errMsg){
+            _mm.errTip(errMsg)
             orderListCon.html('<p class="errorTips">There is no unconfirmed order yet...<a class="link" href="./order-list.html">Go to confirmed orders</a></p>')
         })       
     }

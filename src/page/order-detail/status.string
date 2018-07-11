@@ -6,9 +6,14 @@
 <div class="status-line">Payment Status: {{statusDesc}}</div>
 <div class="status-line">Payment Method: {{paymentTypeDesc}}</div>
 {{#buttonAbled}}
-<div class="btn pay">Pay</div>
+<div class="btn pay">Received</div>
 <div class="btn cancel">Cancel</div>
 {{/buttonAbled}}
 {{^buttonAbled}}
+{{#isPaid}}
+<div class="btn btn-none">Received and Paid</div>
+{{/isPaid}}
+{{^isPaid}}
 <div class="btn btn-none">Canceled</div>
+{{/isPaid}}
 {{/buttonAbled}}

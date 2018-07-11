@@ -51,6 +51,17 @@ var _order = {
             success: resolve,
             error: reject
         }) 
+    },
+    cancel: function(orderNo, resolve, reject){
+        _mm.request({
+            url: _mm.getServerUrl('/order/received_and_paid.do'),
+             // method: 'POST',
+            data: {
+                orderNo: orderNo
+            },
+            success: resolve,
+            error: reject
+        }) 
     }
 }
 module.exports = _order
