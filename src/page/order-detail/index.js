@@ -20,7 +20,6 @@ var _page ={
         var orderNo = _mm.getUrlParam('orderNo'), _this = this
         //request for order detail and payment status
         _order.getOrderDetail(orderNo, function(res){
-            console.log(_this, _this.filterData)
             _this.filterData(res.data)
             //render status
             $$('.status-container').html(_mm.renderHTML(templateStatus, res.data))
@@ -31,7 +30,7 @@ var _page ={
         })
     },
     bindEvent: function(){
-        var orderNo = _mm.getUrlParam('orderNo')
+        var orderNo = _mm.getUrlParam('orderNo'), _this = this
         $$(document).on('click', '.pay', function(){
             //click receive button, res is orderVo
             _order.receivedAndPaid(orderNo, function(res){
