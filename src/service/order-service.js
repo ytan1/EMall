@@ -52,7 +52,7 @@ var _order = {
             error: reject
         }) 
     },
-    cancel: function(orderNo, resolve, reject){
+    receivedAndPaid: function(orderNo, resolve, reject){
         _mm.request({
             url: _mm.getServerUrl('/order/received_and_paid.do'),
              // method: 'POST',

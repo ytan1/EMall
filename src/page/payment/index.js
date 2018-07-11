@@ -6,6 +6,5 @@ var template = require('./index.string')
 
 $$(function(){
     var orderNo = _mm.getUrlParam('orderNumber')
-    
-    $$('#orderNo').html(_mm.renderHTML(template, orderNo))
+    $$('#orderNo').html(_mm.renderHTML(template, {orderNo:orderNo}))
 })
