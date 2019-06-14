@@ -1,0 +1,39 @@
+<div class="detail-intro">
+            <div class="intro-left">
+                <div class="image-con">
+                    <img class="main-img" src="{{imageHost}}{{mainImage}}" alt="xxx"></img>
+                </div>
+                <ul class="image-list">
+                    {{#subImages}}
+                    <li class="image-item">
+                        <img class="image-thumbnail" src="{{imageHost}}{{.}}" alt="xxx">
+                    </li>
+                    {{/subImages}}
+
+                </ul>
+            </div>
+            <div class="intro-right">
+                <div class="intro-title">{{name}}</div>
+                <div class="intro-subtitle">{{subtitle}}</div>
+                <div class="intro-item intro-price">
+                    <span class="item-key">Price:</span><span class="item-value">${{price}}</span>
+                </div>
+                <div class="intro-item intro-stock">
+                    <span class="item-key">Stock:</span><span class="item-value">{{stock}}</span>
+                </div>
+                <div class="intro-item intro-amount">
+                    <span class="item-key">Amount:</span><span class="item-value"><input value="1" readonly=""><span class="amount-up">+</span><span class="amount-down">-</span></span>
+                </div>
+                <div class="add-to-cart btn">Add to Cart</div>
+            </div>
+        </div>
+        <div class="detail-detail">
+            <div class="detail-tab-con">
+                <ul class="tab-list">
+                    <li class="tab-item">Details</li>
+                </ul>
+            </div>
+            <div class="detail-content">
+                {{{detail}}}
+            </div>
+        </div>

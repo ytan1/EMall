@@ -1,0 +1,19 @@
+<div class="order-list-title">Status of the Order</div>
+<div class="status-line">Order Number: {{orderNo}}</div>
+<div class="status-line">Creating Time: {{createTime}}</div>
+<div class="status-line">Receiver Info: {{shippingVO.receiverName}}, {{shippingVO.receiverAddress}} {{shippingVO.receiverCity}}, {{shippingVO.receiverProvince}}</div>
+<div class="status-line">Contact Info: {{shippingVO.receiverPhone}}</div>
+<div class="status-line">Payment Status: {{statusDesc}}</div>
+<div class="status-line">Payment Method: {{paymentTypeDesc}}</div>
+{{#buttonAbled}}
+<div class="btn pay">Received</div>
+<div class="btn cancel">Cancel</div>
+{{/buttonAbled}}
+{{^buttonAbled}}
+{{#isPaid}}
+<div class="btn btn-none">Received and Paid</div>
+{{/isPaid}}
+{{^isPaid}}
+<div class="btn btn-none">Canceled</div>
+{{/isPaid}}
+{{/buttonAbled}}

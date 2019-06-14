@@ -1,0 +1,1 @@
+<a href="./order-detail.html?orderNo={{orderNo}}">{{orderNo}}</a>

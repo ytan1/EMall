@@ -1,0 +1,70 @@
+/*
+* @Author: ytan1
+* @Date:   2018-03-09 14:43:01
+* @Last Modified by:   ytan1
+* @Last Modified time: 2018-03-09 14:57:41
+*/
+/*
+* @Author: ytan1
+* @Date:   2018-03-09 10:54:19
+* @Last Modified by:   ytan1
+* @Last Modified time: 2018-03-09 13:43:42
+*/
+.register-title{
+    text-align: center; 
+    font-weight: 600;
+    font-size: 20px;
+
+}
+.register-error{
+    margin-top:20px;
+    font-size: 10px;
+    border: 1px solid red;
+    background: #fde9e9;
+    padding: 5px;
+    color: red;
+    display: none;
+}
+.register-item{
+    margin-top: 20px;
+    width: calc(100% - 52px);
+    position: relative;
+}
+.register-label{
+    position: absolute;
+    top: 1px;
+    bottom: 1px;
+    left: 1px;
+    color: grey;
+    background: #f3f3f3;
+    width: 40px;
+    text-align: center;
+    line-height: 32px;
+    font-size: 14px;
+}
+.register-input{
+    width: 100%;
+    padding: 10px 0px 10px 50px;
+    font-size: 14px;
+    border: 1px solid grey;
+    outline: none;
+}
+.register-btn{
+    margin-top: 20px;
+    width: 100%;
+    height: 34px;
+    color: #fff;
+    background: #c60023;
+    line-height: 34px;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+}
+.register-link{
+    margin-top: 10px;
+    text-align: right;
+
+}
+.register-link .link{
+    margin-left: 15px;   
+}

@@ -1,0 +1,18 @@
+<div class="user-center-title">User Center Update</div>
+<div class="user-center-item">
+    <span class="user-center-label">Username</span>: <span class="user-center-text">{{username}}</span>
+</div>
+<div class="user-center-item">
+    <span class="user-center-label">Email</span><input class="user-center-text" id="email" autocomplete="off" value="{{email}}"></input>
+</div>
+<div class="user-center-item">
+    <span class="user-center-label">Phone</span><input class="user-center-text" id="phone" autocomplete="off" value="{{phone}}"></input>
+</div>
+
+<div class="user-center-item">
+    <span class="user-center-label">Question</span><input class="user-center-text" id="question" autocomplete="off" value="{{question}}"></input>
+</div>
+<div class="user-center-item">
+    <span class="user-center-label">Answer</span><input class="user-center-text" id="answer" autocomplete="off" value="{{answer}}"></input>
+</div>
+<div class="btn user-center-btn">Save</div>

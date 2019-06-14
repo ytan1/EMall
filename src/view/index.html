@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <%= require('html-loader!./layout/html-head.html') %>
+        <title><%= htmlWebpackPlugin.options.title %> -- E-Mall 2018</title>
+</head>
+
+<body>
+    <%= require('html-loader!./layout/nav.html') %>
+    <%= require('html-loader!./layout/header.html') %>
+    <div class="w">
+        <!-- list of keywords of items -->
+        <div class="keyword-list">
+            <div class="keyword-item">
+                <a class="link" target="_blank" href="./list.html?categoryId=100033">Mobile:</a>
+                <a class="link" target="_blank" href="./list.html?categoryId=100033&keyword=samsung">Samsung</a>
+                <a class="link" target="_blank" href="./list.html?categoryId=100033&keyword=iphone">Apple</a>
+            </div>
+            <div class="keyword-item">
+                <a class="link" target="_blank" href="./list.html?categoryId=100034">Laptop:</a>
+                <a class="link" target="_blank" href="./list.html?categoryId=100034&keyword=toshiba">Toshiba</a>
+                <a class="link" target="_blank" href="./list.html?categoryId=100034&keyword=mac">Mac</a>
+                <a class="link" target="_blank" href="./list.html?categoryId=100034&keyword=lenovo">Lenovo</a>
+            </div>
+            <div class="keyword-item">
+                <a class="link" target="_blank" href="./list.html?categoryId=100035">Headphone:</a>
+                <a class="link" target="_blank" href="./list.html?categoryId=100035&keyword=sony">Sony</a>
+                <a class="link" target="_blank" href="./list.html?categoryId=100035&keyword=sennheiser">Sennheiser</a>
+            </div>
+            <div class="keyword-item">
+                <a class="link" target="_blank" href="./list.html?categoryId=100032">Mouse:</a>
+                <a class="link" target="_blank" href="./list.html?categoryId=100032&keyword=logitech">Logitech</a>
+                <a class="link" target="_blank" href="./list.html?categoryId=100032&keyword=Pictek">Pictek</a>
+            </div>
+            <div class="keyword-item">
+                <a class="link" target="_blank" href="./list.html?categoryId=100036">Games:</a>
+                <a class="link" target="_blank" href="./list.html?categoryId=100036&keyword=nintendo">Nitendo</a>
+                <a class="link" target="_blank" href="./list.html?categoryId=100036&keyword=sony">Sony</a>
+            </div>
+            <div class="keyword-item">
+                <a class="link" target="_blank" href="./list.html?categoryId=100037">TV:</a>
+                <a class="link" target="_blank" href="./list.html?categoryId=100037&keyword=samsung">Samsung</a>
+                <a class="link" target="_blank" href="./list.html?categoryId=100037&keyword=LG">LG</a>
+            </div>
+            <div class="keyword-item">
+                <a class="link" target="_blank" href="./list.html?categoryId=100038">Microwave:</a>
+                <a class="link" target="_blank" href="./list.html?categoryId=100038&keyword=danby">Danby</a>
+                <a class="link" target="_blank" href="./list.html?categoryId=100038">...</a>
+            </div>
+            <div class="keyword-item">
+                <a class="link" target="_blank" href="./list.html?categoryId=100039">Camera:</a>
+                <a class="link" target="_blank" href="./list.html?categoryId=100039&keyword=sony">Sony</a>
+                <a class="link" target="_blank" href="./list.html?categoryId=100039">...</a>
+            </div>
+            <div class="keyword-item">
+                <a class="link" target="_blank" href="./list.html?categoryId=100040">Tablets:</a>
+                <a class="link" target="_blank" href="./list.html?categoryId=100040&keyword=surface">Microsoft</a>
+                <a class="link" target="_blank" href="./list.html?categoryId=100040&keyword=ipad">iPad</a>
+                
+            </div>
+            <div class="keyword-item">
+                <a class="link" target="_blank" href="./list.html?categoryId=100041">Readers:</a>
+                <a class="link" target="_blank" href="./list.html?categoryId=100041&keyword=kindle">Kindle</a>
+                <a class="link" target="_blank" href="./list.html?categoryId=100041">...</a>
+            </div>
+            
+        </div>
+        <!-- carousel -->
+        <div class="banner-container">
+            <div class="banner">
+                <div class="banner-item">
+                    <a href="./list.html?categoryId=100033&keyword=xiaomi"><img class="banner-img" src="<%= require('../image/banner/banner1.jpg') %>" alt="Heater"></a>
+                </div>
+                <div class="banner-item">
+                    <a href="./list.html?categoryId=100034&keyword=toshiba"><img class="banner-img" src="<%= require('../image/banner/banner2.jpg') %>" alt="Heater"></a>
+                </div>
+                <div class="banner-item">
+                    <a href="./list.html?categoryId=100036"><img class="banner-img" src="<%= require('../image/banner/banner3.jpg') %>" alt="Heater"></a>
+                </div>
+                <div class="banner-item">
+                    <a href="./list.html?categoryId=100035&keyword=technica"><img class="banner-img" src="<%= require('../image/banner/banner4.jpg') %>" alt="Heater"></a>
+                </div>
+
+            </div>
+            <div class="banner-dots"></div>
+        </div>
+    </div>
+    <div class="w">
+        <div class="floor">
+            <div class="floor-title">Search By Type</div>
+            <div class="floor-item"><a href="./list.html?categoryId=100033">
+                <div class="floor-item-text">Mobiles</div>
+                <img class="floor-item-image" src="<%= require('../image/floor/floor1-1.jpg') %>" alt="Mobiles">
+            </a></div>
+            <div class="floor-item"><a href="./list.html?categoryId=100034">
+                <div class="floor-item-text">Laptops</div>
+                <img class="floor-item-image" src="<%= require('../image/floor/floor1-2.jpg') %>" alt="Laptops">
+            </a></div>
+            <div class="floor-item"><a href="./list.html?categoryId=100035">
+                <div class="floor-item-text">Headphones</div>
+                <img class="floor-item-image" src="<%= require('../image/floor/floor1-3.jpg') %>" alt="headphones">
+            </a></div>
+            <div class="floor-item"><a href="./list.html?categoryId=100036">
+                <div class="floor-item-text">Games</div>
+                <img class="floor-item-image" src="<%= require('../image/floor/floor1-4.jpg') %>" alt="Games">
+            </a></div>
+            <div class="floor-item"><a href="./list.html?categoryId=100032">
+                <div class="floor-item-text">Mouse</div>
+                <img class="floor-item-image" src="<%= require('../image/floor/floor1-5.jpg') %>" alt="Mouse">
+            </a></div>
+        </div>
+        <div class="floor">
+            
+            <div class="floor-item"><a href="./list.html?categoryId=100037">
+                <div class="floor-item-text">TV</div>
+                <img class="floor-item-image" src="<%= require('../image/floor/floor2-1.jpg') %>" alt="tv">
+            </a></div>
+            <div class="floor-item"><a href="./list.html?categoryId=100038">
+                <div class="floor-item-text">Microwave</div>
+                <img class="floor-item-image" src="<%= require('../image/floor/floor2-2.jpg') %>" alt="micro">
+            </a></div>
+            <div class="floor-item"><a href="./list.html?categoryId=100039">
+                <div class="floor-item-text">Cameras</div>
+                <img class="floor-item-image" src="<%= require('../image/floor/floor2-3.jpg') %>" alt="camera">
+            </a></div>
+            <div class="floor-item"><a href="./list.html?categoryId=100033">
+                <div class="floor-item-text">Tablets</div>
+                <img class="floor-item-image" src="<%= require('../image/floor/floor2-4.jpg') %>" alt="tablets">
+            </a></div>
+            <div class="floor-item"><a href="./list.html?categoryId=100034">
+                <div class="floor-item-text">EBook Reader</div>
+                <img class="floor-item-image" src="<%= require('../image/floor/floor2-5.jpg') %>" alt="Reader">
+            </a></div>
+        </div>
+        
+    </div>
+    <%= require('html-loader!./layout/footer.html') %>
+</body>
+
+</html>

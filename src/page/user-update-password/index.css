@@ -1,0 +1,36 @@
+/*
+* @Author: ytan1
+* @Date:   2018-03-10 20:45:25
+* @Last Modified by:   ytan1
+* @Last Modified time: 2018-03-10 21:13:05
+*/
+.user-center-list{
+    padding: 0 20px 20px 20px;
+}
+.user-center-title{
+    border-bottom: 1px solid #eee;
+    font-size: 14px;
+    line-height: 30px;
+    height: 30px;
+    font-weight: bold;
+    color: #666;
+    margin-bottom: 8px;
+
+}
+.user-center-item{
+    font-size: 14px;
+    height: 30px;
+    line-height: 30px;
+}
+.user-center-label{
+    display: inline-block;
+    width: 100px;
+    text-align: center;
+}
+.user-center-btn{
+    margin-top:20px;
+}
+input.user-center-text{
+    outline: none;
+    padding-left: 5px;
+}

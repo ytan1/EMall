@@ -1,0 +1,142 @@
+/*
+* @Author: ytan1
+* @Date:   2018-03-14 13:47:06
+* @Last Modified by:   ytan1
+* @Last Modified time: 2018-03-14 16:54:12
+*/
+.detail-intro{
+    overflow: hidden;
+}
+.intro-left{
+    float: left;
+    width: 420px;
+    margin-right: 15px;
+}
+.intro-left .image-con{
+    height: 400px;
+}
+.intro-left .image-con .main-img{
+    width: 100%;
+    height: 100%;
+}
+.intro-left .image-list{
+    overflow: hidden;
+    height: 80px;
+    margin-right: -5px;
+}
+.intro-left .image-list .image-item{
+    float: left;
+    width: 76px;
+    height: 76px;
+    border: #eee 2px solid;
+    
+    margin-right: 5px;
+}
+.intro-left .image-list .image-item .image-thumbnail{
+    width: 100%;
+    height: 100%;
+}
+.intro-left .image-list .image-item:hover{
+    border: #c60023 2px solid;
+}
+.intro-right{
+    float: left;
+    width: 645px;
+}
+.intro-right .intro-title{
+    height: 30px;
+    line-height: 30px;
+    font-size: 20px;
+}
+.intro-right .intro-subtitle{
+    font-size: 14px;
+    color: #c60023;
+    height: 30px;
+    line-height: 30px;
+}
+.intro-item{
+    height: 40px;
+    padding-left: 10px;
+}
+.intro-item .item-key{
+    color: #999;
+    font-size: 14px;
+    height: 100%;
+    line-height: 40px;
+    width: 80px;
+    display: inline-block;
+}
+.intro-item .item-value{
+    height: 40px;
+    line-height: 40px;
+    vertical-align: middle;
+    position: relative;
+    display: inline-block;
+}
+.intro-price{
+    margin-top: 10px;
+    background: #eee;
+}
+.intro-price .item-value{
+    color: #c60023;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+
+
+.intro-amount .item-value input{
+    height: 24px;
+    line-height: 24px;
+    font-size: 14px;
+    width: 40px;
+}
+.amount-up, .amount-down{
+    display: inline-block;
+    width: 16px;
+    height: 10px;
+    line-height: 8px;
+    font-size: 6px;
+    position: absolute;
+    background: #fff;
+    border: 1px #000 solid;
+    text-align: center;
+    cursor: pointer;
+    left: 50px;
+
+    -moz-user-select : none;
+    -webkit-user-select : none;
+    -ms-user-select : none;
+    user-select : none;
+}
+.amount-up{
+    top: 7px;
+}
+.amount-down{
+    bottom: 7px;
+}
+.add-to-cart{
+    margin-top: 30px;
+}
+.detail-tab-con{
+    height: 40px;
+    margin-top: 30px;
+    background: #eee;
+    border-bottom: 2px #c60023 solid;
+}
+.tab-item{
+    background: #c60023;
+    color: #fff;
+    height: 40px;
+    width: 80px;
+    line-height: 40px;
+    text-align: center;
+    cursor: pointer;
+}
+.errorTip{
+    color: #f60;
+    background: #eee;
+    height: 40px;
+    line-height: 40px;
+    font-size: 20px;
+}

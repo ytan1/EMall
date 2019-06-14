@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <%= require('html-loader!./layout/html-head.html') %>
+        <title><%= htmlWebpackPlugin.options.title %> -- E-Mall 2018</title>
+</head>
+
+<body>
+    <%= require('html-loader!./layout/header-simple.html') %>
+    <div class="page-wrap w">
+        <div class="content">
+            <div class="result-wrap register-success">
+                <h2 class="result">
+                    Register Success!
+                </h2>
+                <a class="goHome-btn" href="./index.html">Back</a>
+            </div>
+            <div class="result-wrap order-success">
+                <h2 class="result">
+                    Order Success!
+                </h2>
+                <a class="goHome-btn" href="./index.html">Back</a>
+            </div>
+            <div class="result-wrap reset-success">
+                <h2 class="result">
+                    Reset Success!
+                </h2>
+                <a class="goHome-btn" href="./index.html">Back</a>
+            </div>
+            <div class="result-wrap cart-add-success">
+                <h2 class="result">
+                    Item added to cart!
+                </h2>
+                <a class="goHome-btn" href="./index.html">Back</a>
+            </div>
+            
+        </div>
+    </div>
+    <%= require('html-loader!./layout/footer.html') %>
+</body>
+
+</html>

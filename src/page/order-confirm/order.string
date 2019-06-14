@@ -1,0 +1,29 @@
+<div class="order-title">List of Orders</div>
+
+<table class="order-table">
+    <tr class="order-head-row">
+        <th class="order-img">&nbsp;</th>
+        <th class="order-item">Items</th>
+        <th class="order-price">Price</th>
+        <th class="order-amount">Amount</th>
+        <th class="order-total-price">Total</th>
+        
+    </tr>
+    {{#orderItemVoList}}
+    <tr class="order-item-row" data-product-id="{{productId}}">
+        <td class="order-img">
+            <a href="./detail.html?productId={{productId}}">
+                <img class="order-img-ele" src="{{imageHost}}{{productImage}}" alt="">
+            </a>
+        </td>
+        <td class="order-item">{{productName}}</td>
+        <td class="order-price">${{currentUnitPrice}}</td>
+        <td class="order-amount">{{quantity}}</td>
+        <td class="order-total-price">${{totalPrice}}</td>
+    </tr>
+    {{/orderItemVoList}}
+</table>
+<div class="order-footer">
+    <div class="order-checkout">Order</div>
+    <div class="order-total">Total <span>${{productTotalPrice}}</span></div>
+</div>

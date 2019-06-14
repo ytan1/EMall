@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <%= require('html-loader!./layout/html-head.html') %>
+        <title><%= htmlWebpackPlugin.options.title %> -- E-Mall 2018</title>
+</head>
+
+<body>
+<%= require('html-loader!./layout/header-simple.html') %>
+<div class="middleW">
+    <div class="register-title">
+        SIGN UP
+    </div>
+    <div class="register-error">
+        <i class="fa fa-minus-circle"></i><span class="register-error-msg"> ERROR</span>
+    </div>
+    <div class="register-item">
+        <label>
+            <i class="fa fa-user register-label"></i>
+            <input class="register-input" id="register-username" type="text" placeholder="Username..."></input>
+        </label>
+    </div>
+    <div class="register-item">
+        <label>
+            <i class="fa fa-lock register-label"></i>
+            <input class="register-input" id="register-pwd" type="password" placeholder="Password..."></input>
+        </label>
+    </div>
+    <div class="register-item">
+        <label>
+            <i class="fa fa-lock register-label"></i>
+            <input class="register-input" id="register-confirm" type="text" placeholder="Confirm password..."></input>
+        </label>
+    </div>
+    <div class="register-item">
+        <label>
+            <i class="fa fa-phone register-label"></i>
+            <input class="register-input" id="register-phone" type="text" placeholder="Phone Number..."></input>
+        </label>
+    </div>
+    <div class="register-item">
+        <label>
+            <i class="fa fa-envelope register-label"></i>
+            <input class="register-input" id="register-email" type="text" placeholder="Email..."></input>
+        </label>
+    </div>
+    <div class="register-item">
+        <label>
+            <i class="fa fa-question register-label"></i>
+            <input class="register-input" id="register-question" type="text" placeholder="Set a question for finding password..."></input>
+        </label>
+    </div>
+    <div class="register-item">
+        <label>
+            <i class="fa fa-key register-label"></i>
+            <input class="register-input" id="register-answer" type="text" placeholder="Answer..."></input>
+        </label>
+    </div>
+    <div class="register-btn">LOGIN</div>
+    <div class="register-link">
+        <a class="link" href="./user-login.html">Log In</a>
+        <a class="link" href="./user-reset-password.html">Forgot...</a>
+
+    </div>
+</div>
+<%= require('html-loader!./layout/footer.html') %>
+</body>
+</html>

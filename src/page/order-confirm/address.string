@@ -1,0 +1,29 @@
+<div class="order-title ">
+    Shipping address
+</div>
+{{#list}}
+{{#isActive}}
+<div class="address-item active" data-id="{{id}}">
+{{/isActive}}
+{{^isActive}}
+<div class="address-item" data-id="{{id}}">
+{{/isActive}}
+
+    <div class="address-content">
+        <div class="address-item-title">
+            {{receiverCity}}, {{receiverProvince}}( To: {{receiverName}} )
+        </div>
+        <div class="address-detail">
+            {{receiverAddress}}  Tel: {{receiverPhone}}
+        </div>
+    </div>
+    <div class="address-operation">
+        <span class="address-edit">Edit</span>
+        <span class="address-delete">Delete</span>
+    </div>
+</div>
+{{/list}}
+<div class="address-add">
+    <div class="address-add-sign"><i class="fa fa-plus"></i></div>
+    <div class="address-add-text">Add a new address</div>
+</div>

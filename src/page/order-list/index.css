@@ -1,0 +1,94 @@
+/*
+* @Author: ytan1
+* @Date:   2018-03-20 11:11:11
+* @Last Modified by:   ytan1
+* @Last Modified time: 2018-03-20 12:57:32
+*/
+.main-container{
+    padding: 0 20px 20px 20px;
+}
+.order-list-title{
+    border-bottom: 1px solid #eee;
+    font-size: 14px;
+    line-height: 30px;
+    height: 30px;
+    font-weight: bold;
+    color: #666;
+    margin-bottom: 8px;
+
+}
+.table-head, .table-body{
+    width: 100%;
+    border-bottom: 1px #ebebeb solid;
+    margin-bottom: 5px;
+    border-collapse: collapse;
+}
+.order-head-row{
+    height: 40px;
+    background: #eee;
+    vertical-align: middle;
+    line-height: 40px;
+}
+.order-img{
+    width: 10%;
+}
+.order-item-row .order-img{
+    padding: 10px;
+    text-align: center;
+}
+.order-img-ele{
+    width: 80px;
+    height: 80px;
+}
+.order-item{
+    width: 30%;
+    text-align: left;
+
+}
+.order-price{
+    width: 20%;
+    text-align: center;
+}
+.order-amount{
+    width: 20%;
+    text-align: center;
+}
+
+.order-total-price{
+    width: 20%;
+    text-align: center;
+}
+/*.order-summary-row{ should be applied to table ele
+   margin-top: 26px; 
+}*/
+.table-body{
+    margin-top: 20px;
+}
+.order-summary-row td{
+    background: #eee;
+    line-height: 28px;
+    height: 28px;
+    
+    color: #999;
+    padding: 0 10px;
+}
+.order-summary-row td span{
+    margin-right: 10px;
+}
+
+.details{
+   float: right;
+}
+.bold{
+    font-weight: bold;
+}
+.red{
+    color: #c60023;
+}
+.errorTips{
+    text-align: center;
+    font-weight: bold;
+}
+.pagination{
+    padding: 10px;
+}

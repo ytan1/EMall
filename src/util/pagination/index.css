@@ -1,0 +1,38 @@
+/*
+* @Author: ytan1
+* @Date:   2018-03-13 18:41:01
+* @Last Modified by:   ytan1
+* @Last Modified time: 2018-03-14 11:18:23
+*/
+.pg-item{
+    height: 16px;
+    line-height: 16px;
+    font-size: 12px;
+    padding: 0 5px;
+    color: #000;
+    background: #fff;
+    border: 1px #000 solid;
+    cursor: pointer;
+    margin-right: -1px;
+    margin-left: 0;
+}
+.pg-item.disabled{
+    color: #bbb;
+    border: #bbb 1px solid;
+    cursor: no-drop;
+}
+.pg-item.active{
+    background: #c60023;
+    color: #fff;
+    cursor: default;
+    border: #c60023 1px solid;
+}
+.pg-item:last-child{
+    margin-right: 15px;
+}
+.pg-item-total{
+    margin-left: 15px;
+}
+.pg-size-con{
+    float: right;
+}

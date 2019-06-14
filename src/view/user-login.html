@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <%= require('html-loader!./layout/html-head.html') %>
+        <title><%= htmlWebpackPlugin.options.title %> -- E-Mall 2018</title>
+</head>
+
+<body>
+<%= require('html-loader!./layout/header-simple.html') %>
+<div class="middleW">
+    <div class="login-title">
+        USER LOGIN
+    </div>
+    <div class="login-error">
+        <i class="fa fa-minus-circle"></i><span class="login-error-msg"> ERROR</span>
+    </div>
+    <div class="login-item">
+        <label>
+            <i class="fa fa-user login-label"></i>
+            <input class="login-input" id="login-username" type="text" placeholder="Username..."></input>
+        </label>
+    </div>
+    <div class="login-item">
+        <label>
+            <i class="fa fa-lock login-label"></i>
+            <input class="login-input" id="login-pwd" type="password" placeholder="Password..."></input>
+        </label>
+    </div>
+    <div class="login-btn">LOGIN</div>
+    <div class="login-link">
+        <a class="link" href="./user-register.html">Register</a>
+        <a class="link" href="./user-reset-password.html">Forgot...</a>
+
+    </div>
+</div>
+<%= require('html-loader!./layout/footer.html') %>
+</body>
+</html>
